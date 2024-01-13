@@ -1,0 +1,36 @@
+﻿@model Library.Web.Areas.Admin.Models.BookCreateModel
+<div class="card card-info">
+    <div class="card-header">
+        <h3 class="card-title">Horizontal Form</h3>
+    </div>
+    <!-- /.card-header -->
+    <!-- form start -->
+    <form asp-action="Create" asp-controller="Book" asp-area="Admin" asp-antiforgery="true">
+        <div class="card-body">
+            <div class="form-group row">
+                <label asp-for="Title" class="col-sm-2 col-form-label">Title</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" asp-for="Title">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="PublishDate" class="col-sm-2 col-form-label">Publish Date</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" asp-for="PublishDate">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="AuthorName" class="col-sm-2 col-form-label">Author Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" asp-for="AuthorName">
+                </div>
+            </div>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+           
+            <button type="submit" class="btn btn-default float-right">Submit</button>
+        </div>
+        <!-- /.card-footer -->
+    </form>
+</div>
